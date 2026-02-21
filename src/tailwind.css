@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-Inter: "Inter", sans-serif;
+
+    --color-black: #1C1C1C;
+    --color-light-gray: rgba(28, 28, 28, 0.4);
+    --color-light-blue: #E3F5FF;
+    --color-light-purple: #E5ECF6;
+    --color-light: #F7F9FB;
+}
+
+@layer base{
+    .select-option{
+        @apply text-light-gray font-normal hover:font-medium duration-100 hover:text-black cursor-pointer text-lg;
+    }
+    .nav-comp{
+        @apply  flex items-center gap-2 bg-white hover:bg-light-gray/15 py-2 pl-4 cursor-pointer relative rounded-lg duration-500 ;
+    }
+    .line{
+        @apply w-1.5 h-6 rounded-md  absolute left-0 duration-500 group-hover:bg-black;
+    }
+    .info-box{
+        @apply w-full bg-light-blue flex flex-col gap-5 rounded-3xl p-8;
+    }
+}
