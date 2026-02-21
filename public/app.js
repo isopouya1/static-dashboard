@@ -7,7 +7,7 @@
       datasets: [{
         backgroundColor: '#E3F5FF',
         label: '# of Votes',
-        data: [12, 29, 3, 5, 2, 3],
+        data: [12, 29, 35, 5, 2, 3],
         borderWidth: 1
       }]
     },
