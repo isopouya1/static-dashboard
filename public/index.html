@@ -220,8 +220,9 @@
                 </ul>
             </div>
         </section>
-        <section class="w-full h-screen col-span-5 overflow-scroll h-[150vh]">
-            <header class="w-full border-b-2 border-light-gray/30 p-5 flex items-center justify-between sticky top-0 bg-white">
+        <section class="w-full h-screen col-span-5 overflow-scroll">
+            <header
+                class="w-full border-b-2 border-light-gray/30 p-5 flex items-center justify-between sticky top-0 bg-white">
                 <div class="flex items-center gap-4">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -392,9 +393,18 @@
                         
                         </div>
                     </div> -->
-<div>
-    <canvas id="bar-chart-horizontal" height="500px"></canvas>
-</div>
+                    <div>
+                        <canvas id="bar-chart-horizontal" height="500px"></canvas>
+                    </div>
+                    <div class="col-span-2">
+                        <canvas id="bar-chart" width="100%"></canvas>
+                    </div>
+                    <div >
+                        <canvas id="radar-chart"></canvas>
+                    </div>
+                    <div>
+                            <canvas id="radar-chart2"></canvas>
+                    </div>
                 </section>
             </article>
         </section>
@@ -402,7 +412,8 @@
 
         </section>
     </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="app.js"></script>
 </body>
 
