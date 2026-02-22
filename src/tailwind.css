@@ -25,3 +25,7 @@
         @apply w-full bg-light-blue flex flex-col gap-5 rounded-3xl p-8;
     }
 }
+
+::-webkit-scrollbar{
+    width: 0;
+}
