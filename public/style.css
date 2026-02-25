@@ -232,6 +232,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -315,6 +318,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -578,6 +584,16 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
+    }
+  }
+  .lg\:grid {
+    @media (width >= 64rem) {
+      display: grid;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .dark\:mt-5 {
