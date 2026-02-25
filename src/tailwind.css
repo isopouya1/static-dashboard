@@ -24,8 +24,12 @@
     .info-box{
         @apply w-full bg-light-blue flex flex-col gap-5 rounded-3xl p-8;
     }
+    .after{
+        @apply after:content-[''] after:absolute after:w-0.5 after:h-5 after:bg-light-gray/50 after:-bottom-4.5 after:left-4 relative;
+    }
 }
 
 ::-webkit-scrollbar{
     width: 0;
 }
+
