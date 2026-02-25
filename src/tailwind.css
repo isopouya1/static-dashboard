@@ -13,13 +13,13 @@
 
 @layer base{
     .select-option{
-        @apply text-light-gray font-normal hover:font-medium duration-100 hover:text-black cursor-pointer text-lg;
+        @apply text-light-gray font-normal hover:font-medium duration-100 hover:text-black dark:hover:text-light-blue cursor-pointer text-lg dark:text-white;
     }
     .nav-comp{
-        @apply  flex items-center gap-2 bg-white hover:bg-light-gray/15 py-2 pl-4 cursor-pointer relative rounded-lg duration-500 ;
+        @apply  flex items-center gap-2 bg-white hover:bg-light-gray/15 dark:hover:bg-white/15 py-2 pl-4 cursor-pointer relative rounded-lg duration-500 dark:bg-black dark:text-white ;
     }
     .line{
-        @apply w-1.5 h-6 rounded-md  absolute left-0 duration-500 group-hover:bg-black;
+        @apply w-1.5 h-6 rounded-md  absolute left-0 duration-500 group-hover:bg-black dark:group-hover:bg-light-purple;
     }
     .info-box{
         @apply w-full bg-light-blue flex flex-col gap-5 rounded-3xl p-8;
